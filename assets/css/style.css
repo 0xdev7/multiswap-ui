@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	color: #bdbfc5;
+}
+
+body {
+	background-color: #070709;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: white;
+	font-weight: 900;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h1 > span {
+	background: -webkit-linear-gradient(305deg, #e5409b 11.34%, #fb5843 52.57%, #fd7942 95.21%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+p {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+ul li {
+	font-size: 16px;
+}
+
+button {
+	border: 1px solid #4f5156;
+	border-radius: 8px;
+	background-color: transparent;
+	color: white;
+	padding: 16px 25px;
+	font-size: 16px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background: #17171a;
+}
+
+button.bg-primary {
+	background: linear-gradient(118.37deg, #e5409b 11.34%, #fb5843 52.57%, #fd7942 95.21%);
+	border-radius: 8px;
+}
+
+img {
+	max-width: 80vw;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0px;
+}
+
+.header li {
+	padding: 0px 30px;
+}
+
+.header button {
+	padding: 10px 20px;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 200px 0px 0px 0px;
+}
+
+.hero p {
+	margin-top: 30px;
+  text-align: center;
+}
+
+.hero button {
+	margin-top: 30px;
+	padding: 20px 30px;
+}
+
+.hero .mockup {
+	margin-top: -40px;
+	z-index: -1;
+	width: 100%;
+	height: 500px;
+	background: url(../imgs/Macbook.png);
+	background-size: auto 100%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.hero .whitepaper {
+	padding: 66px 10px 80px 10px;
+	width: 85%;
+	border-radius: 15px;
+	background-color: #212129;
+	text-align: center;
+}
+
+.hero .whitepaper h6 {
+	color: #fb5843;
+}
+
+.hero .whitepaper button {
+	margin-top: 15px;
+}
+
+.about {
+	margin: 180px 0px;
+}
+
+.about img {
+	width: 80%;
+}
+
+.about .content {
+	padding: 154px 0px 0px 84px;
+
+	background: url(../imgs/M.svg);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.about .content p {
+	font-size: 18px;
+  margin: 30px 0px 40px 0px;
+}
+
+.chains {
+	background-color: #212129;
+	text-align: center;
+	padding: 80px 160px;
+	border-radius: 16px;
+}
+
+.chains img {
+	margin-top: 48px;
+}
+
+.chains p {
+	font-size: 16px;
+	margin: 16px 0px 0px 0px;
+}
+
+.view {
+	margin: 180px 0px;
+}
+
+.view .content {
+	padding: 154px 0px 0px 50px;
+
+	background: url(../imgs/D.svg);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: 20px 20px;
+}
+
+.view .content p {
+	font-size: 18px;
+  margin: 30px 0px 40px 0px;
+}
+
+.view .graphic {
+	margin-top: 60px;
+}
+
+.features {
+	padding: 120px 0px 100px 0px;
+	text-align: center;
+	background: #212129;
+}
+
+.features h6 {
+  color: #fb5843;
+  font-weight: 400;
+}
+
+.features p {
+	margin-top: 16px;
+	font-size: 22px;
+}
+
+.features .content {
+	margin-top: 80px;
+}
+
+.features .content h5 {
+	margin-top: 20px;
+}
+
+.features .content p {
+	font-size: 16px;
+}
+
+.speed {
+	margin: 180px 0px;
+}
+
+.speed .content {
+	padding: 154px 0px 0px 84px;
+
+	background: url(../imgs/S.svg);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.speed .content p {
+	font-size: 18px;
+  margin: 30px 0px 40px 0px;
+}
+
+.footer {
+	background: #212129;
+}
+
+.semi-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 54px 0px;
+
+	border-bottom: 1px solid gray;
+}
+
+.semi-footer li {
+	padding: 0px 20px;
+}
+
+.ffooter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 0px;
+}
+
+.ffooter p {
+	font-size: 14px;
+}
+
+.ffooter li {
+	padding: 0px 5px;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 130px;
+  }
+  
+  .hero p {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .hero .mockup {
+    margin-top: -40px;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    background: url(../imgs/Macbook.png);
+    background-size: auto 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .about {
+    margin: 50px 0px;
+  }
+
+  .about .graphic {
+    text-align: center;
+  }
+
+  .about .content {
+    margin-top: 50px;
+    padding: 54px 0px 0px 24px;
+    background-size: 50% auto;
+  }
+
+  .chains {
+    padding: 40px 30px;
+  }
+
+  .chains img {
+    width: 40px;
+  }
+
+  .chains p {
+    font-size: 14px;
+  }
+
+  .view {
+    margin: 50px 0px;
+  }
+
+  .view img {
+    width: 100%;
+  }
+
+  .view .graphic {
+    text-align: center;
+  }
+
+  .view .content {
+    margin-top: 30px;
+    padding: 85px 0px 0px 41px;
+    background-size: 50% auto;
+  }
+
+  .view .content p {
+    font-size: 16px;
+  }
+
+  .features p {
+    font-size: 16px;
+  }
+  
+  .features .content {
+    margin-top: 40px;
+  }
+
+  .features .content > div {
+    display: flex;
+    align-items: start;
+  }
+
+  .features .content > div > img{
+    width: 48px;
+  }
+  
+  .features .content > div > div {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .features .content > div > div > h5 {
+    margin-top: 0px;
+  }
+
+  .speed {
+    margin: 70px 0px;
+  }
+
+  .speed .graphic {
+    text-align: center;
+  }
+
+  .speed .content {
+    margin-top: 50px;
+    padding: 54px 0px 0px 24px;
+    background-size: 30% auto;
+  }
+
+  .speed .content p {
+    font-size: 16px;
+  }
+
+  .semi-footer {
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 0px;
+  }
+
+  .semi-footer ul {
+    padding-left: 0px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .semi-footer ul li {
+    padding: 30px 0px;
+  }
+
+  .ffooter {
+    flex-direction: column;
+  }
+
+  .ffooter ul {
+    padding-left: 0px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .ffooter p {
+    text-align: left;
+  }
+}
